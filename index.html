@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Activello</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <header class="site-header" id="head">
+    <nav class="menu container">
+      <div class="row">
+        <div class="col-md-8 col-6">
+          <ul class="menu-list">
+            <li><a class="active" href="#">HOME</a></li>
+            <li class="about-test">
+              <a href="#">ABOUT THE TEST</a>
+              <i class="fa fa-angle-down"></i>
+              <ul class="dropdown">
+                <li><a href="">Page Markup And Formatting</a></li>
+                <li><a href="">Clean Floats</a></li>
+                <li><a href="">Page with comment</a></li>
+                <li><a href="">Page with comment disabled</a></li>
+                <li><a href="">Lorem Ipsum</a></li>
+              </ul>
+            </li>
+            <li class="level">
+              <a href="#">LEVEL 1</a>
+              <i class="fa fa-angle-down"></i>
+              <ul class="dropdown">
+                <li><a href="">Level 2</a></li>
+                <li><a href="">Level 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">SHOP</a></li>
+          </ul>
+          <button class="button-menu-res" onclick="showMenu()">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="search-form col-md-4 col-6">
+          <form action="">
+            <input type="text" placeholder="Search">
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <ul id="menu-res" class="menu-res col-12">
+          <li><a class="active" href="#">HOME</a></li>
+          <li class="about-test" onclick="showMenuAbout()">
+            <a href="#">ABOUT THE TEST</a>
+            <i class="fa fa-angle-down"></i>
+            <ul id="about-test" class="dropdown">
+              <li><a href="">Page Markup And Formatting</a></li>
+              <li><a href="">Clean Floats</a></li>
+              <li><a href="">Page with comment</a></li>
+              <li><a href="">Page with comment disabled</a></li>
+              <li><a href="">Lorem Ipsum</a></li>
+            </ul>
+          </li>
+          <li class="level" onclick="showMenuLevel()">
+            <a href="#">LEVEL 1</a>
+            <i class="fa fa-angle-down"></i>
+            <ul id="level" class="dropdown">
+              <li><a href="">Level 2</a></li>
+              <li><a href="">Level 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">SHOP</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <section class="brand-section">
+    <div class="container">
+      <div class="row">
+        <div class="brand">
+          <a href="">
+            <img src="images/logo.png" alt="">
+          </a>
+          <p class="slogan">Just another colorlib.com site</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slide-section">
+    <div class="slide">
+      <button class="button-left" onclick="moveSlide(-1)">
+        <i class="fa fa-angle-left"></i>
+      </button>
+      <div class="item slide-1 active">
+        <div class="template">
+          <a class="template-title" href="">TEMPLATE</a>
+          <a class="template-text" href="">Template: Featured Image (No Sidebar Layout)</a>
+          <a class="readmore" href="">READ MORE</a>
+        </div>
+        <div class="image">
+          <img src="images/photo-1437915015400-137312b61975-1920x550.jpg" alt="">
+        </div>
+      </div>
+      <div class="item slide-2">
+        <div class="template">
+          <a class="template-title" href="">TEMPLATE</a>
+          <a class="template-text" href="">Template: Featured Image (Full Width No Sidebar Layout)</a>
+          <a class="readmore" href="">READ MORE</a>
+        </div>
+        <div class="image">
+          <img src="images/photo-1431578500526-4d9613015464-1920x550.jpg" alt="">
+        </div>
+      </div>
+      <div class="item slide-3">
+        <div class="template">
+          <a class="template-title" href="">TEMPLATE</a>
+          <a class="template-text" href="">Template: More Tag</a>
+          <a class="readmore" href="">READ MORE</a>
+        </div>
+        <div class="image">
+          <img src="images/oIpwxeeSPy1cnwYpqJ1w_Dufer-Collateral-test-1920x550.jpg" alt="">
+        </div>
+      </div>
+      <div class="item slide-4">
+        <div class="template">
+          <a class="template-title" href="">TEMPLATE</a>
+          <a class="template-text" href="">Template: Excerpt (Defined)</a>
+          <a class="readmore" href="">READ MORE</a>
+        </div>
+        <div class="image">
+          <img src="images/16386149745_f56818fbd4_o-1920x550.jpg" alt="">
+        </div>
+      </div>
+      <div class="item slide-5">
+        <div class="template">
+          <a class="template-title" href="">TEMPLATE</a>
+          <a class="template-text" href="">Template: Comments</a>
+          <a class="readmore" href="">READ MORE</a>
+        </div>
+        <div class="image">
+          <img src="images/119H-1920x550.jpg" alt="">
+        </div>
+      </div>
+      <button class="button-right" onclick="moveSlide(1)">
+        <i class="fa fa-angle-right"></i>
+      </button>
+      <div class="dots">
+        <button class="dot dot-active" onclick="moveToSlide(0)">
+        </button>
+        <button class="dot" onclick="moveToSlide(1)">
+        </button>
+        <button class="dot" onclick="moveToSlide(2)">
+        </button>
+        <button class="dot" onclick="moveToSlide(3)">
+        </button>
+        <button class="dot" onclick="moveToSlide(4)">
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="page">
+    <div class="container">
+      <div class="row">
+        <div class="post col-lg-8 col-12">
+          <div class="post-format boder-after-post">
+            <a href="" class="widget">POST FORMATS</a>
+            <a href="" class="post-title">Post Format: Standard</a>
+            <div class="post-infor">
+              <p>Posted on </p>
+              <a href="" class="post-time"> October 5, 2016</a>
+              <p>by </p>
+              <a href="" class="post-author">Aigars</a>
+            </div>
+            <a href=""><img src="images/photo-1438109491414-7198515b166b-710x335.jpg" alt=""></a>
+            <p class="post-context">All children, except one, grow up. They soon know that they will grow up, and the
+              way Wendy knew was this.
+            </p>
+            <a href="" class="post-readmore">READ MORE</a>
+          </div>
+          <div class="post-format boder-after-post">
+            <a href="" class="widget">POST FORMATS</a>
+            <a href="" class="post-title">Post Format: Gallery</a>
+            <div class="post-infor">
+              <p>Posted on </p>
+              <a href="" class="post-time"> November 12, 2015</a>
+              <p>by </p>
+              <a href="" class="post-author">Aigars</a>
+            </div>
+            <a href=""><img src="images/photo-1429734160945-4f85244d6a5a-710x335.jpg" alt=""></a>
+            <p class="post-context">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt, sapien nec
+              aliquam viverra, libero elit euismod turpis, vel sollicitudin nisi eros eget tortor.
+            </p>
+            <a href="" class="post-readmore">READ MORE</a>
+          </div>
+          <div class="small-post row">
+            <div class="col-lg-6 col-12">
+              <div class="post-format">
+                <a href="" class="widget">TEMPLATE</a>
+                <a href="" class="post-title">Template: Featured Image (No Sidebar Layout)</a>
+                <div class="post-infor">
+                  <p>Posted on </p>
+                  <a href="" class="post-time"> November 11, 2015</a>
+                  <p>by </p>
+                  <a href="" class="post-author">Aigars</a>
+                </div>
+                <a href=""><img src="images/photo-1437915015400-137312b61975-330x220.jpg" alt=""></a>
+                <p class="post-context">This post should display a featured image, if the theme supports it. Non-square
+                  images can provide some unique styling issues. This post tests a vertical featured image.
+                </p>
+                <a href="" class="post-readmore">READ MORE</a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="post-format">
+                <a href="" class="widget">TEMPLATE</a>
+                <a href="" class="post-title">Template: Featured Image (Full Width No Sidebar Layout)</a>
+                <div class="post-infor">
+                  <p>Posted on </p>
+                  <a href="" class="post-time"> November 1, 2015</a>
+                  <p>by </p>
+                  <a href="" class="post-author">Aigars</a>
+                </div>
+                <a href=""><img src="images/photo-1431578500526-4d9613015464-330x220.jpg" alt=""></a>
+                <p class=" post-context">This post should display a featured image, if the theme supports it. Non-square images can provide some unique styling issues.
+                  </p>
+                  <a href="" class="post-readmore">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="small-post row">
+            <div class="col-lg-6 col-12">
+              <div class="post-format">
+                <a href="" class="widget">TEMPLATE</a>
+                <a href="" class="post-title">Template: More Tag</a>
+                <div class="post-infor">
+                  <p>Posted on </p>
+                  <a href="" class="post-time"> November 1, 2015</a>
+                  <p>by </p>
+                  <a href="" class="post-author">Aigars</a>
+                </div>
+                <a href=""><img src="images/oIpwxeeSPy1cnwYpqJ1w_Dufer-Collateral-test-330x220.jpg" alt=""></a>
+                <p class="post-context">This content is before the more tag. Right after this sentence should be a “continue reading” button of some sort.
+                </p>
+                <a href="" class="post-readmore">READ MORE</a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="post-format">
+                <a href="" class="widget">TEMPLATE</a>
+                <a href="" class="post-title">Template: Excerpt (Defined)</a>
+                <div class="post-infor">
+                  <p>Posted on </p>
+                  <a href="" class="post-time"> October 15, 2015</a>
+                  <p>by </p>
+                  <a href="" class="post-author">Aigars</a>
+                </div>
+                <a href=""><img src="images/16386149745_f56818fbd4_o-330x220.jpg" alt=""></a>
+                <p class=" post-context">This is a user-defined post excerpt. It should be displayed in place of the post content in archive-index pages.
+                  </p>
+                  <a href="" class="post-readmore">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="related col-lg-4 col-12">
+          <div class="about">
+            <span class="title">ABOUT ME</span>
+            <img src="images/photo-1438109491414-7198515b166b1.jpg" alt="">
+            <p>My name is <strong>Activello</strong> and I am an awesome WordPress blog theme for photography, food, travel and other blogs. I was created by <strong><a href="">colorlib</a></strong>.</p>
+          </div>
+          <div class="follow">
+            <span class="title">FOLLOW ME</span>
+            <div class="social">
+              <ul class="social-list">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-github"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="recent">
+            <span class="title">RECENT POSTS</span>
+            <div class="recent-post">
+              <div class="recent-post-item">
+                <a href=""><img src="images/photo-1438109491414-7198515b166b-150x150.jpg" alt=""></a>
+                <div class="text">
+                  <a href="">Post Format: Standard</a>
+                  <p>- 05 Oct , 2016</p>
+                </div>
+              </div>
+              <div class="recent-post-item">
+                <a href=""><img src="images/photo-1429734160945-4f85244d6a5a-150x150.jpg" alt=""></a>
+                <div class="text">
+                  <a href="">Post Format: Gallery</a>
+                  <p>- 12 Nov , 2015</p>
+                </div>
+              </div>
+              <div class="recent-post-item">
+                <a href=""><img src="images/photo-1437915015400-137312b61975-150x150.jpg" alt=""></a>
+                <div class="text">
+                  <a href="">Template: Featured Image (No Sidebar Layout)</a>
+                  <p>- 11 Nov , 2015</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+
+  </footer>
+  <div>
+    <a href="#head" class="fixed-button"><i class="fa fa-angle-up"></i></a>
+  </div>
+  <script src="js/menu.js"></script>
+  <script src="js/slide.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
