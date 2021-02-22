@@ -460,8 +460,10 @@ a,a:hover{
 
 .related{
     padding-top: 30px;
+    font-family: 'Lora', sans-serif;
 }
 .related .title{
+    font-family: 'Montserrat', sans-serif;
     padding-bottom: 10px;
     position: relative;
 }
@@ -480,7 +482,6 @@ a,a:hover{
     width: 100%;
 }
 .related .about p{
-    font-family: 'Lora', sans-serif;
     color: #696969;
     margin-top: 20px;
 }
@@ -494,22 +495,22 @@ a,a:hover{
 .related .follow{
     padding-top: 30px;
 }
-.related .follow .social{
+.social{
     display: flex;
     justify-content: center;
     padding: 20px;
 }
-.related .follow .social .social-list{
+.social .social-list{
     display: inline-flex;
 }
-.related .follow .social .social-list li{
+.social .social-list li{
     padding: 10px;
     font-size: 14px;
 }
-.related .follow .social .social-list li i{
+.social .social-list li i{
     font-size: 20px;
 }
-.related .follow .social .social-list li:hover{
+.social .social-list li:hover{
     color: #a161bf;
 }
 .related .recent{
@@ -533,8 +534,6 @@ a,a:hover{
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-
-    font-family: 'Lora', sans-serif;
 }
 .related .recent .recent-post-item .text a{
     font-style: italic;
@@ -546,6 +545,88 @@ a,a:hover{
 .related .recent .recent-post-item .text p{
     font-size: 12px;
     margin-bottom: 0;
+}
+.related .search{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 40px;
+    width: 100%;
+}
+.related .search form{
+    width: 100%;
+    height: 30px;
+}
+.related .search form input{
+    padding: 5px;
+    height: 30px;
+    vertical-align: middle;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+}
+.related .search form input:focus{
+    color: #111;
+    outline: 1px solid #a161bf;
+}
+.related .search form button{
+    height: 30px;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+.related .search form button:hover{
+    color: #fff;
+    background: #a161bf;
+}
+.related .search form button:focus{
+    outline: none;
+}
+.related .categories{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.categories-list{
+    padding-top: 20px;
+    
+}
+.categories-list li{
+    display: flex;
+    justify-content: space-between;
+    color: #393939;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.related .any-text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.older-post{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.older-post a:hover{
+    color: #a161bf;
+}
+.site-footer{
+    background-color: #f2f2f2;
+    color: #999;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.site-footer .social{
+    display: flex;
+    justify-content: center;
+}
+.site-footer .reference{
+    display: flex;
+    justify-content: center;
+    color: #696969;
 }
 .fixed-button{
     position: fixed;
