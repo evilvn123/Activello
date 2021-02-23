@@ -237,9 +237,10 @@
                   <a href="" class="post-author">Aigars</a>
                 </div>
                 <a href=""><img src="images/photo-1431578500526-4d9613015464-330x220.jpg" alt=""></a>
-                <p class=" post-context">This post should display a featured image, if the theme supports it. Non-square images can provide some unique styling issues.
-                  </p>
-                  <a href="" class="post-readmore">READ MORE</a>
+                <p class=" post-context">This post should display a featured image, if the theme supports it. Non-square
+                  images can provide some unique styling issues.
+                </p>
+                <a href="" class="post-readmore">READ MORE</a>
               </div>
             </div>
           </div>
@@ -255,7 +256,8 @@
                   <a href="" class="post-author">Aigars</a>
                 </div>
                 <a href=""><img src="images/oIpwxeeSPy1cnwYpqJ1w_Dufer-Collateral-test-330x220.jpg" alt=""></a>
-                <p class="post-context">This content is before the more tag. Right after this sentence should be a “continue reading” button of some sort.
+                <p class="post-context">This content is before the more tag. Right after this sentence should be a
+                  “continue reading” button of some sort.
                 </p>
                 <a href="" class="post-readmore">READ MORE</a>
               </div>
@@ -271,9 +273,10 @@
                   <a href="" class="post-author">Aigars</a>
                 </div>
                 <a href=""><img src="images/16386149745_f56818fbd4_o-330x220.jpg" alt=""></a>
-                <p class=" post-context">This is a user-defined post excerpt. It should be displayed in place of the post content in archive-index pages.
-                  </p>
-                  <a href="" class="post-readmore">READ MORE</a>
+                <p class=" post-context">This is a user-defined post excerpt. It should be displayed in place of the
+                  post content in archive-index pages.
+                </p>
+                <a href="" class="post-readmore">READ MORE</a>
               </div>
             </div>
           </div>
@@ -282,7 +285,8 @@
           <div class="about">
             <span class="title">ABOUT ME</span>
             <img src="images/photo-1438109491414-7198515b166b1.jpg" alt="">
-            <p>My name is <strong>Activello</strong> and I am an awesome WordPress blog theme for photography, food, travel and other blogs. I was created by <strong><a href="">colorlib</a></strong>.</p>
+            <p>My name is <strong>Activello</strong> and I am an awesome WordPress blog theme for photography, food,
+              travel and other blogs. I was created by <strong><a href="">colorlib</a></strong>.</p>
           </div>
           <div class="follow">
             <span class="title">FOLLOW ME</span>
@@ -390,8 +394,8 @@
       </div>
     </div>
   </footer>
-  <div>
-    <a href="#head" class="fixed-button"><i class="fa fa-angle-up"></i></a>
+  <div >
+    <a href="#head" class="fixed-button display-none" id="fixed-button"><i class="fa fa-angle-up"></i></a>
   </div>
   <script src="js/menu.js"></script>
   <script src="js/slide.js"></script>
@@ -405,6 +409,19 @@
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script>
+    const fixedBtn = document.getElementById("fixed-button");
+    window.onscroll = () => {
+      if (document.documentElement.scrollTop < screen.height/2) {
+        fixedBtn.classList.add('display-none');
+        fixedBtn.classList.remove('display-flex');
+      }
+      else{
+        fixedBtn.classList.remove('display-none');
+        fixedBtn.classList.add('display-flex');
+      }
+    };
   </script>
 </body>
 
